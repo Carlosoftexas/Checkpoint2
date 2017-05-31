@@ -1,0 +1,112 @@
+.banner {
+width: max 100%;
+display: flex;
+justify-content: space-between;
+align-items:flex-end;
+border-bottom: 7px solid #FF5B62;
+margin: 40px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: flex-end;
+  width: 100%;
+}
+.navbar {
+justify-content: center;
+}
+
+.navbar li {
+display: flex;
+display: inline-block;
+margin: 0 5px;
+padding: 10px;
+}
+
+
+  /* Add a #8297b2 background color and some padding to the footer */
+  footer {
+    background-color: #8297b2;
+    padding: 20px;
+  }
+
+.carousel-inner {
+width: 100%;
+
+}
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: block;
+  }
+}
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 200px) {
+  .banner (:first-child)
+  .banner {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .banner {position: relative;}
+  .banner {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .banner.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.well {
+text-align: center;
+}
+
+body {
+  font-family: sans-serif;
+/*text-align: center;*/
+}
+
+/* Styling for social media icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+/* Added hover effect */
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Facebook icon */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter icon */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
